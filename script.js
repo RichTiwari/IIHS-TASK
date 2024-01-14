@@ -52,3 +52,16 @@ function logout() {
 if (logoutBtn) {
     logoutBtn.disabled = true;
 }
+
+const button= document.getElementById('button');
+       
+const textlight = document.querySelector('.textlight')
+
+button.addEventListener('click',showText)
+
+function showText(inputName)
+{
+    let text = usertext.value;
+    textlight.innerText = text;
+    usertext.value=""
+}
